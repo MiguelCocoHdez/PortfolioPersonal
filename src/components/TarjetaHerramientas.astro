@@ -1,0 +1,25 @@
+---
+
+interface Tecnologia {
+    nombre: string;
+    img: string;
+}
+
+const { titulo, tecnologias } = Astro.props
+
+---
+
+<div class="contenido-tarjeta flex flex-col bg-white p-6 rounded-lg shadow-md border-l-6 border-l-blue-500">
+    <div class="container-titulo mb-4">
+        <h3 class="font-bold text-3xl text-blue-500 text-center">{titulo}</h3>
+    </div>
+    <div class="container-tecnologias grid grid-cols-3 gap-2">
+        {tecnologias.map((tecnologia: Tecnologia) => (
+            <div class="tarjeta-tecnologia flex flex-col items-center mt-6">
+                <img src={tecnologia.img} alt={tecnologia.nombre} class="w-16 h-16 object-contain" />
+                <p class="mt-2 text-center text-gray-600 font-semibold">{tecnologia.nombre}</p>
+            </div>
+         )
+        )}
+    </div>
+</div>

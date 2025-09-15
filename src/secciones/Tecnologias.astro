@@ -1,3 +1,67 @@
-<section class="min-h-svh flex flex-col bg-[#F4F4F4]">
+---
+import TarjetaHerramientas from "../components/TarjetaHerramientas.astro"
 
+
+const tarjetas = [
+    {
+        titulo: "FrontEnd",
+        tecnologias: [
+            {nombre: "HTML", img: "/assets/html.png"},
+            {nombre: "CSS", img: "/assets/css.png"},
+            {nombre: "JavaScript", img: "/assets/javascript.png"},
+            {nombre: "TypeScript", img: "/assets/typescript.png"},
+            {nombre: "Angular", img: "/assets/angular.png"},
+            {nombre: "React", img: "/assets/react.png"},
+            {nombre: "Astro", img: "/assets/astro.png"},
+            {nombre: "TailwindCSS", img: "/assets/tailwind.png"},
+            {nombre: "Bootstrap", img: "/assets/bootstrap.png"},
+        ]
+    },
+    {
+        titulo: "BackEnd",
+        tecnologias: [
+            {nombre: "Java", img: "/assets/java.png"},
+            {nombre: "Spring Boot", img: "/assets/springboot.png"},
+            {nombre: "Spring Security", img: "/assets/springsecurity.png"},
+            {nombre: "Spring Cloud", img: "/assets/springcloud.png"},
+            {nombre: "JWT", img: "/assets/jwt.png"}
+        ]
+    },
+    {
+        titulo: "Bases de Datos",
+        tecnologias: [
+            {nombre: "MySQL", img: "/assets/mysql.png"},
+            {nombre: "PostgreSQL", img: "/assets/postgresql.png"},
+            {nombre: "MongoDB", img: "/assets/mongodb.png"},
+            {nombre: "Firebase", img: "/assets/firebase.png"}
+        ]
+    },
+    {
+        titulo: "Herramientas",
+        tecnologias: [
+            {nombre: "Git", img: "/assets/git.png"},
+            {nombre: "Docker", img: "/assets/docker.png"},
+            {nombre: "Postman", img: "/assets/postman.png"},
+            {nombre: "Visual Studio Code", img: "/assets/vscode.png"},
+            {nombre: "Eclipse", img: "/assets/eclipse.png"}
+        ]
+    }
+]
+
+---
+
+<section class="min-h-svh flex flex-col bg-[#F4F4F4] pb-50">
+    <div class="titulo-seccion flex justify-center items-center mt-20">
+        <h2 class="text-4xl font-bold">Tecnologías Y Habilidades</h2>
+    </div>
+
+    <div class="subtitulo-seccion">
+        <p class="text-center text-lg mt-6 text-gray-600">Herramientas y tecnologías que domino para crear soluciones completas</p>
+    </div>
+
+    <div class="container-tarjetas grid grid-cols-1 md:grid-cols-2 gap-6 px-6 md:px-20 mt-14">
+        {tarjetas.map(tarjeta => (
+            <TarjetaHerramientas titulo={tarjeta.titulo} tecnologias={tarjeta.tecnologias} />
+        ))}
+    </div>
 </section>
