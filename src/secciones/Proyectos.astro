@@ -1,9 +1,66 @@
-<section class="min-h-svh flex flex-col">
+---
+import TarjetaProyectos from "../components/TarjetaProyectos.astro"
+
+
+const tarjetas = [
+    {
+        titulo: "Fithub",
+        descripcion: "Aplicación SaaS de fitness que permite a los entrenadores gestionar sus clientes y rutinas de entrenamiento tanto a los clientes gestionar sus entrenamientos y progreso.",
+        tecnologias: ["Angular", "TypeScript", "TailwindCSS", "Spring Boot", "Spring Cloud", "Spring Security", "JWT", "PostgreSQL", "Docker"],
+        img: "/assets/fithub.png",
+        enlaces: {
+            front: "https://github.com/MiguelCocoHdez/FitHubFront",
+            back: "https://github.com/MiguelCocoHdez/FitHubBack"
+        }
+    },
+    {
+        titulo: "RiverSpain",
+        descripcion: "Platafotma web tanto para concienciar y formar una comunidad para la limpieza y conservación de los ríos en España como para informar de la fauna de estos.",
+        tecnologias: ["Angular", "TypeScript", "Bootstrap", "Spring Boot", "Spring Cloud", "Firebase", "Docker"],
+        img: "/assets/riverspain.png",
+        enlaces: {
+            front: "https://github.com/MiguelCocoHdez/proyecto-angular19-riverspain",
+            back: "https://github.com/MiguelCocoHdez/proyecto-microservicios-riverspain"
+        } 
+    },
+    {
+        titulo: "Portfolio Personal",
+        descripcion: "Mi portfolio personal, donde muestro mis proyectos, habilidades y experiencia como desarrollador FullStack.",
+        tecnologias: ["Astro", "TypeScript", "TailwindCSS"],
+        img: "/assets/portfolio.png",
+        enlaces: {
+            front: "https://github.com/MiguelCocoHdez/PortfolioPersonal",
+            deploy: "https://askfnaks"
+        }
+    }
+]
+
+---
+
+<section class="min-h-svh flex flex-col pb-50">
      <div class="titulo-seccion flex justify-center items-center mt-20">
         <h2 class="text-4xl font-bold">Proyectos</h2>
     </div>
 
     <div class="subtitulo-seccion">
         <p class="text-center text-lg mt-6 text-gray-600">Una selección de mis trabajos más recientes y relevantes</p>
+    </div>
+
+    <div class="container-proyectos mt-14 flex flex-col justify-center items-center gap-10">
+        {tarjetas.map((tarjeta) => (
+            <TarjetaProyectos 
+                titulo={tarjeta.titulo} 
+                descripcion={tarjeta.descripcion} 
+                tecnologias={tarjeta.tecnologias} 
+                img={tarjeta.img} 
+                enlaces={tarjeta.enlaces}
+            />
+        ))}
+    </div>
+
+    <div class="container-mas-proyectos flex justify-center items-center mt-14">
+        <a href="https://github.com/MiguelCocoHdez" target="_blank" class="bg-white px-4 py-2 rounded-xl border border-gray-300 hover:bg-blue-500 hover:text-white transition">
+            Ver más proyectos en GitHub
+        </a>
     </div>
 </section>
