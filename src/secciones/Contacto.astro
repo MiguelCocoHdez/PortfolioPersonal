@@ -1,3 +1,39 @@
 <section class="min-h-svh flex flex-col bg-[#f4f4f4] pb-50">
+    <div class="titulo-seccion flex justify-center items-center mt-20">
+        <h2 class="text-4xl font-bold">Contáctame</h2>
+    </div>
 
+    <div class="subtitulo-seccion">
+        <p class="text-center text-lg mt-6 text-gray-600">Disponible para colaborar en proyectos y nuevas propuestas laborales. No dudes en enviarme algun mensaje.</p>
+    </div>
+
+    <div class="container-formulario mt-20 flex flex-col justify-center items-center">
+        <div class="formulario w-[80%] lg:w-[60%] p-12 bg-white rounded-lg shadow-lg">
+            <form action="">
+                <div class="titulo-formulario mb-8">
+                    <h3 class="font-bold text-2xl text-center">Envía un mensaje</h3>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 md:gap-10">
+                    <div class="flex flex-col mb-4">
+                        <label class="font-semibold">Nombre</label>
+                        <input name="nombre" class="border-1 border-gray-300 rounded-lg p-2 bg-gray-50 mt-2" type="text" required>
+                    </div>
+                    <div class="flex flex-col mb-4">
+                        <label class="font-semibold">Email</label>
+                        <input name="email" class="border-1 border-gray-300 rounded-lg p-2 bg-gray-50 mt-2" type="email" required>
+                    </div>
+                </div>
+                <div class="flex flex-col mb-4">
+                    <label class="font-semibold">Mensaje</label>
+                    <textarea name="mensaje" class="border-1 border-gray-300 rounded-lg p-2 bg-gray-50 mt-2 pb-10" required></textarea>
+                </div>
+                <div class="mt-8 flex justify-center items-center">
+                    <button type="submit" class="w-[30%] bg-blue-500 text-white flex items-center justify-center p-2 rounded-lg hover:cursor-pointer ease-in-out duration-300 hover:bg-blue-600">
+                        <p>Enviar mensaje</p>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
 </section>
