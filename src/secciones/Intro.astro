@@ -1,6 +1,6 @@
 <section class="min-h-svh flex flex-col items-center justify-center relative overflow-hidden gap-6 bg-[#F4F4F4] bottom-[60px]">
     <div class="titulo">
-        <h1 class="text-6xl">Hola, Soy <span class="text-blue-400">Miguel Coco Hdez</span></h1>
+        <h1 id="typed" class="text-6xl"></h1>
     </div>
 
     <div class="subititulo flex flex-col items-center gap-2">
@@ -37,17 +37,32 @@
     </div>
 </section>
 
-<script>
-    function copiarAlPortapapeles() {
-        navigator.clipboard.writeText('cocohernandezmiguel@gmail.com')
 
-        const spanCopiado = document.querySelector('#spanCopiado')
-        const p = document.createElement('p')
-        p.style.fontSize = '12px'
-        p.textContent = 'Correo copiado al portapapeles'
-        spanCopiado?.appendChild(p)
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script is:inline>
+    document.addEventListener('DOMContentLoaded', () => {
+
+        if (window.Typed) {
+            var typed = new window.Typed('#typed', {
+                strings: ['Hola, soy <span class="text-blue-500">Miguel Coco Hernández</span>'],
+                typeSpeed: 65,
+                backSpeed: 25,
+                loop: false,
+                showCursor: false,
+            });
+        }
+    });
+
+    function copiarAlPortapapeles() {
+        navigator.clipboard.writeText('cocohernandezmiguel@gmail.com');
+
+        const spanCopiado = document.querySelector('#spanCopiado');
+        const p = document.createElement('p');
+        p.style.fontSize = '12px';
+        p.textContent = 'Correo copiado al portapapeles';
+        spanCopiado?.appendChild(p);
     }
-    
-    const correo = document.querySelector('#correo')
-    correo?.addEventListener('click', copiarAlPortapapeles)
+
+    const correo = document.querySelector('#correo');
+    correo?.addEventListener('click', copiarAlPortapapeles);
 </script>
