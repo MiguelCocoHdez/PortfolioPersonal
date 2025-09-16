@@ -1,4 +1,4 @@
-<header class="sticky top-0 z-50 backdrop-blur-sm">
+<header id="header" class="sticky top-0 z-50 backdrop-blur-sm transition-shadow rounded-lg duration-300">
     <div class="navegacion px-6 py-6 flex justify-center items-center gap-12">
         <nav class="flex gap-12">
             <a href="/" class="hover:text-blue-400">Sobre Mi</a>
@@ -8,3 +8,15 @@
         </nav>
     </div> 
 </header>
+
+<script>
+  window.addEventListener("scroll", () => {
+    const header = document.getElementById("header");
+
+    if (window.scrollY > 0) {
+      header?.classList.add("shadow-md"); // aplica sombra
+    } else {
+      header?.classList.remove("shadow-md"); // la quita
+    }
+  });
+</script>
