@@ -1,46 +1,37 @@
-# Astro Starter Kit: Basics
+# 🌌 Portfolio Personal
 
-```sh
-npm create astro@latest -- --template basics
-```
+Bienvenido a mi portfolio personal, un espacio donde muestro mis proyectos, habilidades y experiencia como desarrollador.  
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Este sitio está construido con **Astro** y **TailwindCSS**, y desplegado en **Netlify** para garantizar un rendimiento rápido y una experiencia fluida.
 
-## 🚀 Project Structure
+---
 
-Inside of your Astro project, you'll see the following folders and files:
+## 🚀 Sobre el Proyecto
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
-```
+Este portfolio tiene como objetivo centralizar y mostrar de manera clara:
+- Mis proyectos destacados.  
+- Mis conocimientos técnicos.  
+- Información sobre mí y mi trayectoria como desarrollador.  
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+Gracias a **Astro**, el sitio aprovecha la generación estática para optimizar el rendimiento, mientras que **TailwindCSS** permite un diseño limpio, moderno y totalmente responsivo.  
 
-## 🧞 Commands
+---
 
-All commands are run from the root of the project, from a terminal:
+## 🌍 Despliegue
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+El portfolio está disponible públicamente en el siguiente enlace:  
 
-## 👀 Want to learn more?
+🔗 [Ver Portfolio en Netlify](https://tu-enlace-netlify.netlify.app)
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+---
+
+## 📬 Contacto
+
+Si quieres ponerte en contacto conmigo, puedes hacerlo a través de:  
+
+- **Email:** [tu-email@example.com](mailto:tu-email@example.com)  
+- **LinkedIn:** [Tu Perfil](https://www.linkedin.com/in/tu-usuario)  
+- **GitHub:** [@tu-usuario](https://github.com/tu-usuario)  
+
+---
+✨ Gracias por visitar mi portfolio ✨
