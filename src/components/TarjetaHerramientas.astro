@@ -16,7 +16,7 @@ const { titulo, tecnologias } = Astro.props
     <div class="container-tecnologias grid grid-cols-3 gap-2">
         {tecnologias.map((tecnologia: Tecnologia) => (
             <div class="tarjeta-tecnologia flex flex-col items-center mt-6">
-                <img src={tecnologia.img} alt={tecnologia.nombre} class="w-16 h-16 object-contain" />
+                <img src={tecnologia.img} alt={tecnologia.nombre} class="w-16 h-16 object-contain transition-transform duration-300 hover:scale-110 cursor-pointer" />
                 <p class="mt-2 text-center text-gray-600 font-semibold">{tecnologia.nombre}</p>
             </div>
          )
