@@ -1,41 +1,67 @@
-<footer class="p-20">
-    <div class="contenido-arriba-footer flex items-center">
-        <div class="parte-izquierda w-[30%]">
+<footer class="p-6 sm:p-12 lg:p-20 bg-white">
+    <!-- Contenido principal del footer -->
+    <div class="contenido-arriba-footer flex flex-col lg:flex-row gap-8 lg:gap-0 lg:items-start">
+        <!-- Parte izquierda - Información personal -->
+        <div class="parte-izquierda lg:w-[35%] text-center lg:text-left">
             <div class="texto-nombre flex flex-col gap-4">
-                <p class="text-2xl font-bold">Miguel Coco Hernández</p>
-                <p class="text-gray-600">Creando experiencias web excepcionales con pasión y dedicación.</p>
+                <p class="text-xl sm:text-2xl font-bold text-gray-900">Miguel Coco Hernández</p>
+                <p class="text-gray-600 text-sm sm:text-base leading-relaxed max-w-sm mx-auto lg:mx-0">
+                    Creando experiencias web excepcionales con pasión y dedicación.
+                </p>
             </div>
         </div>
         
-        <div class="parte-derecha w-[70%] flex justify-around items-center">
-            <div class="navegacion flex flex-col gap-4">
-                <p class="text-[16px]">Navegación</p>
-                <a href="#sobreMi" class="text-[12px] text-gray-600 hover:text-blue-400">Sobre Mi</a>
-                <a href="#tecnologias" class="text-[12px] text-gray-600 hover:text-blue-400">Tecnologías</a>
-                <a href="#proyectos" class="text-[12px] text-gray-600 hover:text-blue-400">Proyectos</a>
-                <a href="#contacto" class="text-[12px] text-gray-600 hover:text-blue-400">Contacto</a>
+        <!-- Parte derecha - Links y información -->
+        <div class="parte-derecha lg:w-[65%] grid grid-cols-1 sm:grid-cols-3 gap-8 lg:gap-12">
+            <!-- Navegación -->
+            <div class="navegacion flex flex-col gap-3 text-center sm:text-left">
+                <p class="text-base sm:text-lg font-semibold text-gray-900 mb-2">Navegación</p>
+                <a href="#sobreMi" class="text-sm text-gray-600 hover:text-blue-400 transition-colors duration-200">
+                    Sobre Mi
+                </a>
+                <a href="#tecnologias" class="text-sm text-gray-600 hover:text-blue-400 transition-colors duration-200">
+                    Tecnologías
+                </a>
+                <a href="#proyectos" class="text-sm text-gray-600 hover:text-blue-400 transition-colors duration-200">
+                    Proyectos
+                </a>
+                <a href="#contacto" class="text-sm text-gray-600 hover:text-blue-400 transition-colors duration-200">
+                    Contacto
+                </a>
             </div>
 
-            <div class="servicios flex flex-col gap-4">
-                <p class="text-[16px]">Servicios</p>
-                <p class="text-[12px] text-gray-600">Desarrollo web</p>
-                <p class="text-[12px] text-gray-600">Desarrollo de aplicaciones</p>
-                <p class="text-[12px] text-gray-600">APIs Y Backend</p>
+            <!-- Servicios -->
+            <div class="servicios flex flex-col gap-3 text-center sm:text-left">
+                <p class="text-base sm:text-lg font-semibold text-gray-900 mb-2">Servicios</p>
+                <p class="text-sm text-gray-600">Desarrollo web</p>
+                <p class="text-sm text-gray-600">Desarrollo de aplicaciones</p>
+                <p class="text-sm text-gray-600">APIs y Backend</p>
             </div>
 
-            <div class="contacto flex flex-col gap-4">
-                <p class="text-[16px]">Contacto</p>
-                <p class="text-[12px] text-gray-600">cocohernandezmiguel@gmail.com</p>
-                <p class="text-[12px] text-gray-600">+34 662 29 55 62</p>
-                <p class="text-[12px] text-gray-600">Salamanca, Castilla y León, España</p>
+            <!-- Contacto -->
+            <div class="contacto flex flex-col gap-3 text-center sm:text-left">
+                <p class="text-base sm:text-lg font-semibold text-gray-900 mb-2">Contacto</p>
+                <a href="mailto:cocohernandezmiguel@gmail.com" class="text-sm text-gray-600 hover:text-blue-400 transition-colors duration-200 break-all">
+                    cocohernandezmiguel@gmail.com
+                </a>
+                <a href="tel:+34662295562" class="text-sm text-gray-600 hover:text-blue-400 transition-colors duration-200">
+                    +34 662 29 55 62
+                </a>
+                <p class="text-sm text-gray-600">Salamanca, Castilla y León, España</p>
             </div>
         </div>
     </div>
 
-    <div class="separacion mt-10 mb-10 border-[0.5px] border-gray-200"></div>
+    <!-- Separador -->
+    <div class="separacion mt-8 sm:mt-10 mb-6 sm:mb-8 border-t border-gray-200"></div>
 
-    <div class="contenido-abajo flex justify-between items-center">
-        <p class="text-[14px] text-gray-500">Hecho por Miguel Coco Hernández © 2025</p>
-        <p class="text-[14px] text-gray-500">Todos los derechos reservados</p>
+    <!-- Contenido inferior -->
+    <div class="contenido-abajo flex flex-col sm:flex-row justify-between items-center gap-4 text-center sm:text-left">
+        <p class="text-xs sm:text-sm text-gray-500 order-2 sm:order-1">
+            Hecho por Miguel Coco Hernández © 2025
+        </p>
+        <p class="text-xs sm:text-sm text-gray-500 order-1 sm:order-2">
+            Todos los derechos reservados
+        </p>
     </div>
 </footer>
